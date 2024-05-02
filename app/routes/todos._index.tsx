@@ -1,6 +1,7 @@
 import { json } from "@remix-run/node";
 import { Form, Link, useLoaderData } from "@remix-run/react";
 import { FC } from "react";
+
 import { getTodos } from "~/models/todo.server";
 
 // todos._index.tsx

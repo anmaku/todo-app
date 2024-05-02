@@ -1,8 +1,9 @@
-import { FC } from "react";
-import { redirect } from "react-router";
 import { ActionFunctionArgs, LoaderFunctionArgs } from "@remix-run/node";
 import { Form, useActionData, useLoaderData } from "@remix-run/react";
+import { FC } from "react";
+import { redirect } from "react-router";
 import invariant from "tiny-invariant";
+
 import { getTodo, updateTodo } from "~/models/todo.server";
 
 export const loader = async ({ params }: LoaderFunctionArgs) => {

@@ -2,9 +2,10 @@ import { ActionFunctionArgs, redirect } from "@remix-run/node";
 import { Form, useActionData } from "@remix-run/react";
 import { FC } from "react";
 import invariant from "tiny-invariant";
+
 import { createTodo } from "~/models/todo.server";
 
-type ErrorsType = {
+interface ErrorsType {
   title: string | null;
   deadline: string | null;
 }
